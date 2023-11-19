@@ -1,0 +1,70 @@
+.button-style {
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #ff4081;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 0px;
+    height: 34px;
+    width: 34px;
+    line-height: 30px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    margin-left: 8px;
+    margin-right: 8px;
+
+    text-indent: 1px;
+    transition: width 0.175s ease-in-out;
+}
+
+
+
+.button-style:hover {
+    background-color: gray;
+    width: 86px;
+
+    /* content: "YouTube Music"; */
+}
+
+/* .button-style:hover::after {
+    content: "Music";
+} */
+
+
+
+.music-button-style {
+    background-color: transparent;
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    height: 41.5px;
+    width: 36px;
+    border-radius: 22px;
+
+    color: white;
+    font-size: 15px;
+    transform: scaleY(0.85);
+    font-weight: 500;
+    line-height: 30px;
+    transition: rotate 0.40s ease-in-out;
+    -webkit-text-stroke: 0.50px white;
+}
+
+.music-button-style:hover {
+    background-color: #505050;
+    rotate: 360deg;
+}

@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube to Youtube Music (and back)",
+    "description": "Open songs in Youtube Music and switch back to Youtube at the click of the button",
+    "version": "1.0",
+    "icons": {
+      "16": "/images/ytm16px.png",
+      "48": "/images/ytm64px.png",
+      "128": "/images/ytm300px.png"
+    },
+    "action": {
+      "default_popup": "main.html",
+      "default_icon": {
+        "16": "/images/ytm16px.png",
+        "48": "/images/ytm64px.png",
+        "128": "/images/ytm300px.png"
+      }
+    },
+    "content_scripts": [{
+      "matches" : ["https://www.youtube.com/*", "https://music.youtube.com/*"],
+      "css": ["main.css"],
+      "js": ["main.js"]
+    }]
+  }
